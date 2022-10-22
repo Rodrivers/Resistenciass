@@ -1,0 +1,103 @@
+<div class="container">
+  <div class="row">
+      <div class="col-lg-3">
+          <div class="mb-3">
+            <h3>Primera Banda</h3>
+            <label for="" class="form-label">Color1</label>
+            <select class="form-select form-select-lg" name="" id="" [(ngModel)]="color_1" >
+              <option selected>Selecciona Uno</option>
+          <option value="Negro" id="Negro"> Negro</option>
+          <option value="Cafe" id="Cafe" >Cafe</option>
+          <option value="Rojo" id="Rojo"> Rojo</option>
+          <option value="Naranja" id="Naranja"> Naranja</option>
+          <option value="Amarillo" id="Amarillo"> Amarillo</option>
+          <option value="Verde" id="Verde"> Verde</option>
+          <option value="Azul" id="Azul"> Azul</option>
+          <option value="Violeta" id="Violeta"> Violeta</option>
+          <option value="Gris" id="Gris"> Gris</option>
+          <option value="Blanco" id="Blanco"> Blanco</option>
+            </select>
+          </div>
+            <!--Salto a input-->
+      </div>
+      <div class="col-lg-3">
+        <h3>Segunda Banda</h3>
+        <label for="" class="form-label" >Color 2</label>
+        <select class="form-select-lg" name=""  [(ngModel)]="color_2" >
+          <option selected>Selecciona Uno</option>
+          <option value="Negro" id="Negro"> Negro</option>
+          <option value="Cafe" id="Cafe" >Cafe</option>
+          <option value="Rojo" id="Rojo"> Rojo</option>
+          <option value="Naranja" id="Naranja"> Naranja</option>
+          <option value="Amarillo" id="Amarillo"> Amarillo</option>
+          <option value="Verde" id="Verde"> Verde</option>
+          <option value="Azul" id="Azul"> Azul</option>
+          <option value="Violeta" id="Violeta"> Violeta</option>
+          <option value="Gris" id="Gris"> Gris</option>
+          <option value="Blanco" id="Blanco"> Blanco</option>
+        </select>
+      </div>
+      <div class="col-lg-3">
+        <h3>Tercera Banda</h3>
+        <label for="" class="form-label">Color 3</label>
+        <select class="form-select form-select-lg" name="" id=""  [(ngModel)]="color_3" >
+          <option selected>Selecciona Uno</option>
+          <option value="Negro" id="Negro"> Negro</option>
+          <option value="Cafe" id="Cafe" >Cafe</option>
+          <option value="Rojo" id="Rojo"> Rojo</option>
+          <option value="Naranja" id="Naranja"> Naranja</option>
+          <option value="Amarillo" id="Amarillo"> Amarillo</option>
+          <option value="Verde" id="Verde"> Verde</option>
+          <option value="Azul" id="Azul"> Azul</option>
+          <option value="Violeta" id="Violeta"> Violeta</option>
+          <option value="Gris" id="Gris"> Gris</option>
+          <option value="Blanco" id="Blanco"> Blanco</option>
+        </select>
+      </div>
+
+  </div>
+  <h3> Tolerancia</h3>
+  <div class="input-group mb-2">
+
+    <label for="" class="form-control" name="colorsin">Oro 
+    <input type="radio" name="resistencia" value="0" id="Oro" [(ngModel)]="tolerancia"></label>
+  </div>
+  <div class="input-group mb-2">
+        <label for="" class="form-control" name="colorsin">Plata 
+        <input type="radio" name="resistencia" value="1" id="Plata" [(ngModel)]="tolerancia"></label>
+  </div>
+  <button type="button" class="btn btn-outline-success" (click)="porcesar()" >Agregar</button>
+  <div class="container mt-3">
+    <table class="table-striped" >
+      <thead>
+        <tr>
+          <th scope="col">Primera Banda</th>
+          <th scope="col">Segunda Banda</th>
+          <th scope="col">Tercera Banda</th>
+          <th scope="col">Tolerancia</th>
+          <th scope="col">Valor</th>
+          <th scope="col">Valor Min</th>
+          <th scope="col">Valor Max</th>
+        </tr>
+      </thead>
+      
+      <tbody>
+        <tr class="">
+          <td scope="row"  [style.background-color]="{Style_1}" id="colorsin1">{{color_1}}</td>
+          <td  id="colorsin2">{{color_2}}</td>
+          <td  id="colorsin3" >{{color_3}}</td>
+          <td> {{toleranciaV}} </td>
+          <td> {{resistencia}} </td>
+          <td> {{min}} </td>
+          <td> {{max}} </td>
+        </tr>
+       
+      </tbody>
+    </table>
+    </div>
+
+
+</div>
+
+
+

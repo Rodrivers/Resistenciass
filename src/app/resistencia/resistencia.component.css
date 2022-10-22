@@ -1,0 +1,135 @@
+#cafe {
+	color: brown;
+	}
+	#Rojo {
+	  color: red;
+	}
+	#Naranja {
+	  color: orangered;
+	}
+	#Amarillo {
+	  color: yellow;
+	}
+	#Verde {
+	  color: green;
+	}
+	#Azul {
+	  color: blue;
+	}
+	#Violeta {
+	  color: blueviolet;
+	}
+	#Gris {
+	  color: gray;
+	}
+	#Blanco {
+	  color: black;
+	  
+	}
+	.container{
+		background-color: cyan;
+		color: rgba(0, 0, 0, 0.945);
+		font-size: 15px;
+		width: 60%;
+		text-align: center;
+		margin-left: 260px;
+		margin-right: 300px;
+	}
+	table, td{
+		border: 1px solid black;
+		margin-left: 400px;
+		margin-bottom: 25px;
+		width: 250px;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	.table-striped{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: -100px;
+		width: 100%;
+	}
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background: #23b499;
+   font-family: 'Open Sans', sans-serif;
+   color: #fff;
+}
+select {
+   -webkit-appearance:none;
+   -moz-appearance:none;
+   -ms-appearance:none;
+   appearance:none;
+   outline:0;
+   box-shadow:none;
+   border:0!important;
+   background: #41b49946;
+   background-image: none;
+   flex: 1;
+   padding: 0 .5em;
+   color:#fff;
+   cursor:pointer;
+   font-size: 1em;
+   font-family: 'Open Sans', sans-serif;
+}
+select::-ms-expand {
+   display: none;
+}
+.select {
+   position: relative;
+   display: flex;
+   width: 20em;
+   height: 3em;
+   line-height: 3;
+   background: #5c6664;
+   overflow: hidden;
+   border-radius: .25em;
+}
+.select::after {
+   content: '\25BC';
+   position: absolute;
+   top: 0;
+   right: 0;
+   padding: 0 1em;
+   background: #7de2e2;
+   cursor:pointer;
+   pointer-events:none;
+   transition:.25s all ease;
+}
+.select:hover::after {
+   color: #02524360;
+}
+button {
+	background-color: #b20edb6b; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	border-radius: 20px;
+  }
+  
+  button {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  .col-lg-3{
+	border: 1px solid darkblue;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	
+  }
+  .form-select-lg{
+	border:0.5px solid black;
+  }
+  
